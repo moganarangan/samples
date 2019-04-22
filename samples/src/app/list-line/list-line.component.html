@@ -1,0 +1,14 @@
+<div class="container-fluid">
+  <h1 class="mt-4 display-4 text-monospace">List-line</h1>
+
+  <div class="mt-5">
+    <ul class="line-container">
+      <li *ngFor="let item of listModel" class="font-weight"
+        [ngClass]="{ 'current': item.isCurrent,  'waiting': !item.isCurrent && !item.completed, 'completed': item.completed }">
+        <i class="far fa-dot-circle mr-3"></i>
+        <span class="line-text">{{item.value}}</span>
+      </li>
+    </ul>
+  </div>
+
+</div>

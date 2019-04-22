@@ -1,0 +1,40 @@
+.line-container {
+  list-style-type: none;
+
+  li {
+    padding-bottom: 2%;
+    position: relative;
+
+    i:before {
+      position: absolute;
+      border-left: 1px solid;
+      bottom: 0;
+      z-index: -1;
+      height: 100%;
+    }
+  }
+
+  li:last-child {
+    padding-bottom: 0 !important;
+  }
+}
+
+.font-weight {
+  font-weight: 400 !important;
+}
+
+.line-text {
+  font-size: 25px;
+}
+
+.completed {
+  color: #388e3c;
+}
+
+.current {
+  color: #33b5e5;
+}
+
+.waiting {
+  color: #eaa82d;
+}
